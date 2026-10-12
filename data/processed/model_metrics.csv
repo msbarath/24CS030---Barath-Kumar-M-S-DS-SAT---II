@@ -1,0 +1,3 @@
+label,MAE,RMSE,R2
+Baseline (Mean),2.9156,3.7699,-0.0036
+RandomForest,0.901,1.4887,0.8435

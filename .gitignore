@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Models (large binary — regenerate with run_pipeline.py)
+models/*.pkl
+
+# GitHub-ready ZIP (regenerate as needed)
+*.zip
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Secrets and credentials
+*.pem
+*.key
+.env
+secrets.json
+credentials.json
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp

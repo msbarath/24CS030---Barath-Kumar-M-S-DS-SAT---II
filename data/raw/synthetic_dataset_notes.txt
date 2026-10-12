@@ -1,0 +1,53 @@
+ELECTRICITY CONSUMPTION INSIGHT — SYNTHETIC PRACTICE DATASET
+
+IMPORTANT
+These five CSV files are synthetic, artificially generated practice data. They were NOT supplied by GridSense Energy Services, are NOT official challenge data, and do NOT describe real customers or real utility measurements. Use them to practice the assessment workflow only. In your report, disclose that the dataset is synthetic. Do not present the outputs as official results from the original challenge dataset.
+
+Coverage
+- Meter and weather time span: 2025-01-01 00:00 through 2025-04-30 23:00 (hourly underlying grid).
+- 80 synthetic customer IDs.
+- The consumption field is intended to represent illustrative kWh consumed during an hourly interval. It is generated to demonstrate temporal, segment, weather and tariff analysis, not as a calibrated real-world physical model.
+- The tariff_rate values are illustrative synthetic values, not official electricity tariffs or financial advice.
+
+FILES AND COLUMNS
+1) meter_readings.csv
+   timestamp, customer, consumption
+   Intended observation key: customer + timestamp. Some missing readings, missing consumption values, exact duplicates, conflicting customer-timestamp duplicates, and negative consumption values are intentionally included for data-cleaning practice. Negative values are synthetic errors inserted for the exercise; still investigate before removing them.
+
+2) customers.csv
+   customer, segment, area, connection_type, tariff_category
+   The segment field intentionally has inconsistent capitalization/whitespace for equivalent category labels. tariff_category is included as a join field so meter/customer data can be linked to the tariff schedule.
+
+3) weather.csv
+   timestamp, temperature, humidity, rain
+   Hourly synthetic weather. Some timestamp rows and weather cells are intentionally missing.
+
+4) calendar.csv
+   date, weekday, holiday, season
+   One row per date. Holiday and season labels are illustrative, not an authoritative calendar.
+
+5) tariff.csv
+   tariff_category, hour, peak_period, tariff_rate
+   Synthetic hourly tariff-period mapping for TOU-A, TOU-B, and TOU-C. Join customers to tariff_category, and then match the meter timestamp hour to tariff hour. tariff_rate is illustrative only.
+
+SUGGESTED JOINS
+- meter_readings.customer -> customers.customer (many readings per customer; customer table should be one row per customer).
+- meter_readings.timestamp -> weather.timestamp (weather is hourly; use an exact timestamp join and inspect missing weather matches).
+- meter_readings timestamp normalized to date -> calendar.date.
+- customers.tariff_category + hour(meter_readings.timestamp) -> tariff.tariff_category + tariff.hour.
+
+QUALITY ISSUES INSERTED ON PURPOSE
+- Some absent meter-reading intervals.
+- Some blank consumption values.
+- Negative consumption values.
+- Exact duplicate meter rows and conflicting duplicate customer/timestamp readings.
+- Inconsistent capitalization/whitespace in customer segment labels.
+- Missing hourly weather rows and missing temperature/humidity/rain cells.
+
+Recommended practice
+- Keep raw files unchanged; clean copies into a processed folder.
+- Validate every join and check that joins do not unexpectedly multiply meter rows.
+- Normalize category labels before EDA.
+- Investigate negative values and duplicate customer-timestamp keys before deciding how to handle them.
+- Keep genuine high consumption values unless evidence shows they are errors.
+- Use a chronological train/test split for forecasting-oriented evaluation.

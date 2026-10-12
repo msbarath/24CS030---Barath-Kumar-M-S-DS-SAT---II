@@ -1,0 +1,81 @@
+customer,segment,area,connection_type,tariff_category
+C001,INDUSTRIAL ,East,Three Phase,TOU-C
+C002,RESIDENTIAL,South,Three Phase,TOU-A
+C003,small business ,East,Three Phase,TOU-B
+C004, residential ,South,Single Phase,TOU-A
+C005, INDUSTRIAL,North,Three Phase,TOU-C
+C006,COMMERCIAL,East,Three Phase,TOU-B
+C007, Small Business,West,Three Phase,TOU-B
+C008,SMALL BUSINESS,West,Three Phase,TOU-B
+C009,small business ,East,Single Phase,TOU-B
+C010, Small Business,West,Three Phase,TOU-B
+C011,SMALL BUSINESS,West,Single Phase,TOU-B
+C012,Small Business,West,Three Phase,TOU-B
+C013,RESIDENTIAL,South,Single Phase,TOU-A
+C014,SMALL BUSINESS,Central,Three Phase,TOU-B
+C015,Residential,North,Single Phase,TOU-A
+C016,Residential,West,Single Phase,TOU-A
+C017,Residential,North,Single Phase,TOU-A
+C018,SMALL BUSINESS,South,Single Phase,TOU-B
+C019,small business ,North,Three Phase,TOU-B
+C020,Commercial,South,Three Phase,TOU-B
+C021,commercial,East,Three Phase,TOU-B
+C022,INDUSTRIAL ,West,Three Phase,TOU-C
+C023, INDUSTRIAL,East,Three Phase,TOU-C
+C024,Industrial,North,Three Phase,TOU-C
+C025, Small Business,North,Single Phase,TOU-B
+C026, COMMERCIAL ,South,Three Phase,TOU-B
+C027,small business ,North,Single Phase,TOU-B
+C028,Commercial,Central,Single Phase,TOU-B
+C029,Commercial,North,Three Phase,TOU-B
+C030,COMMERCIAL,South,Three Phase,TOU-B
+C031,industrial,Central,Three Phase,TOU-C
+C032,Commercial,North,Three Phase,TOU-B
+C033,SMALL BUSINESS,West,Single Phase,TOU-B
+C034,small business ,East,Single Phase,TOU-B
+C035,INDUSTRIAL ,South,High Voltage,TOU-C
+C036, Small Business,West,Single Phase,TOU-B
+C037,commercial,West,Single Phase,TOU-B
+C038,COMMERCIAL,North,Three Phase,TOU-B
+C039,INDUSTRIAL ,North,Three Phase,TOU-C
+C040, INDUSTRIAL,East,Three Phase,TOU-C
+C041,Industrial,East,Three Phase,TOU-C
+C042,COMMERCIAL,Central,Single Phase,TOU-B
+C043, Small Business,South,Three Phase,TOU-B
+C044,commercial,East,Single Phase,TOU-B
+C045,Industrial,South,High Voltage,TOU-C
+C046,Small Business,North,Three Phase,TOU-B
+C047, residential ,East,Single Phase,TOU-A
+C048,residential,Central,Three Phase,TOU-A
+C049, Small Business,North,Single Phase,TOU-B
+C050,small business ,North,Single Phase,TOU-B
+C051, residential ,East,Three Phase,TOU-A
+C052,RESIDENTIAL,North,Single Phase,TOU-A
+C053,industrial,Central,Three Phase,TOU-C
+C054,COMMERCIAL,East,Three Phase,TOU-B
+C055,Residential,East,Single Phase,TOU-A
+C056,COMMERCIAL,East,Three Phase,TOU-B
+C057,Industrial,East,Three Phase,TOU-C
+C058, residential ,West,Three Phase,TOU-A
+C059, residential ,South,Three Phase,TOU-A
+C060, residential ,South,Three Phase,TOU-A
+C061, INDUSTRIAL,West,Three Phase,TOU-C
+C062,Commercial,West,Single Phase,TOU-B
+C063,RESIDENTIAL,South,Single Phase,TOU-A
+C064,Industrial,South,Three Phase,TOU-C
+C065,commercial,North,Single Phase,TOU-B
+C066,industrial,West,Three Phase,TOU-C
+C067,Small Business,East,Three Phase,TOU-B
+C068,Residential,Central,Single Phase,TOU-A
+C069,industrial,West,Three Phase,TOU-C
+C070,RESIDENTIAL,Central,Single Phase,TOU-A
+C071,commercial,West,Three Phase,TOU-B
+C072,Industrial,East,Three Phase,TOU-C
+C073,Commercial,Central,Three Phase,TOU-B
+C074, residential ,North,Single Phase,TOU-A
+C075, residential ,South,Single Phase,TOU-A
+C076, COMMERCIAL ,Central,Single Phase,TOU-B
+C077, INDUSTRIAL,East,Three Phase,TOU-C
+C078, INDUSTRIAL,South,Three Phase,TOU-C
+C079,commercial,West,Single Phase,TOU-B
+C080,residential,West,Three Phase,TOU-A
